@@ -15,7 +15,7 @@ const Card = ({ className = "", image, title, descripton, labels, url }) => {
       </div>
       <div className="mt-[24px] flex-1 flex flex-col">
         <div className="flex-1 flex flex-col gap-2">
-          <h3 className="text-[18px] font-semibold">{title}</h3>
+          <h3 className="text-[18px] leading-[140%] font-semibold">{title}</h3>
           <div className="flex flex-wrap gap-2">
             {labels.map((label, i) => (
               <p

@@ -26,7 +26,7 @@ const DisplayAllTeam = ({ allTeam }) => {
               key={i}
               image={team.image}
               name={team.name}
-              skills={team.skills}
+              skill={team.skill}
               bio={team.bio}
               socials={team.socials}
             />

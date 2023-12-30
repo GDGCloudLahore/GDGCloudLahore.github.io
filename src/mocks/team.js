@@ -2,7 +2,8 @@ const teamMembers = [
   {
     image: "/assets/team/adil.jpg",
     name: "Adil Shehzad",
-    skills: ["Senior DevOps Engineer"],
+    skill: "Senior DevOps Engineer",
+    bio: "A skillful DevOps Engineer/SRE with a passion for architecting cloud solutions.",
     socials: [
       {
         name: "GitHub",
@@ -19,7 +20,8 @@ const teamMembers = [
   {
     image: "/assets/team/asad.jpg",
     name: "Syed Asad Ali",
-    skills: ["DevOps Engineer"],
+    skill: "DevOps Engineer",
+    bio: "CNCF Ambassador | GDG Organizer",
     socials: [
       {
         name: "GitHub",
@@ -36,7 +38,8 @@ const teamMembers = [
   {
     image: "/assets/team/hasnaat.jpg",
     name: "Hasnaat Iftikhar",
-    skills: ["FullStack JavaScript Developer"],
+    skill: "FullStack JavaScript Developer",
+    bio: "Versatile FullStack Developer dedicated to crafting seamless User Experiences.",
     socials: [
       {
         name: "GitHub",
