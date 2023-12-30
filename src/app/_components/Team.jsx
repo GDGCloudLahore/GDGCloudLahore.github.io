@@ -12,10 +12,7 @@ const TeamSection = () => {
   return (
     <section>
       <Container>
-        <SectionHeader
-          title="Say hello to our amazing team!"
-          badge="Our Team"
-        />
+        <SectionHeader title="Say hello to our team!" badge="Our Team" />
 
         <DisplayAllTeam allTeam={teamMembers} />
       </Container>

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center gap-[40px] sm:gap-0 mb-[16px] sm:mb-0">
           <Link
             href="/"
             className="relative bottom-[-2px] md:static md:bottom-0 text-[18px] font-bold flex justify-center items-center"

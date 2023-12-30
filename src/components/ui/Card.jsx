@@ -14,26 +14,30 @@ const Card = ({ className = "", image, title, descripton, labels, url }) => {
         <Image src={image} alt={title} fill />
       </div>
       <div className="mt-[24px] flex-1 flex flex-col">
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-[20px] sm:gap-2">
           <h3 className="text-[18px] leading-[140%] font-semibold">{title}</h3>
           <div className="flex flex-wrap gap-2">
             {labels.map((label, i) => (
               <p
                 key={i}
-                className="w-fit bg-white text-black rounded-[8px] px-[8px] py-[6px] text-[14px]"
+                className="w-fit bg-white text-black rounded-[8px] px-[8px] py-[6px] text-[16px] sm:text-[14px]"
               >
                 {label}
               </p>
             ))}
           </div>
-          <p className="mt-[16px] text-[14px] text-black">
+          <p className="sm:mt-[16px] text-[16px] sm:text-[14px] text-black">
             <span className="font-semibold">📅 Date: </span>
 
             {descripton}
           </p>
         </div>
         <Link href={url} target="_blank">
-          <Button variant="primary" size="small" className="mt-[16px]">
+          <Button
+            variant="primary"
+            size="small"
+            className="mt-[40px] sm:mt-[16px]"
+          >
             View Details
           </Button>
         </Link>

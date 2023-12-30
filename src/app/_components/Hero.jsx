@@ -9,12 +9,12 @@ import Newsletter from "./Newsletter";
 
 const HeroSection = () => {
   return (
-    <section className="h-auto pt-[120px] md:pt-[140px] flex justify-center items-center">
+    <section className="min-h-screen h-auto md:pt-[140px] flex justify-center items-center">
       <Container>
         <div className="flex flex-col justify-center items-center gap-[8px]">
           <h1 className="max-w-[500px] md:max-w-[720px] mx-auto uppercase text-[22px] sm:text-[28px] leading-[140%] font-semibold text-center">
             Discover cloud computing with guidance from{" "}
-            <span className="w-fit mx-auto text-white bg-black px-[16px] py-[4px] rounded-[12px] block md:inline">
+            <span className="pt-[2px] sm:pt-0 w-fit mx-auto text-white bg-black px-[16px] py-[4px] rounded-[12px] block md:inline">
               industry professionals!
             </span>
           </h1>

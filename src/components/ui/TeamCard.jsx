@@ -14,13 +14,15 @@ const TeamCard = ({ className = "", image, name, bio, skill, socials }) => {
         <Image src={image} alt={name} fill className="object-contain" />
       </div>
       <div className="mt-[24px] flex-1 flex flex-col">
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-[20px] sm:gap-2">
           <h3 className="text-[18px] font-semibold">{name}</h3>
           <div className="flex flex-wrap gap-2">
-            <p className="w-fit text-black text-[14px]">{skill}</p>
+            <p className="w-fit text-black text-[16px] sm:text-[14px]">
+              {skill}
+            </p>
           </div>
           {bio && (
-            <p className="mt-[12px] text-[14px] text-black leading-[140%]">
+            <p className="sm:mt-[12px] text-[16px] sm:text-[14px] text-black leading-[140%]">
               {bio}
             </p>
           )}
