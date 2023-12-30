@@ -23,7 +23,12 @@ const CursorFollower = () => {
     top: `${cursorPosition.y}px`,
   };
 
-  return <div className={styles.customCursor} style={cursorStyle}></div>;
+  return (
+    <div
+      className={`${styles.customCursor} hidden md:block`}
+      style={cursorStyle}
+    ></div>
+  );
 };
 
 export default CursorFollower;

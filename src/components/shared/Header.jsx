@@ -86,9 +86,15 @@ const Header = () => {
           </Link>
 
           {toggle ? (
-            <X className="relative z-[100]" onClick={handleToggle} />
+            <X
+              className="relative z-[100] block sm:hidden"
+              onClick={handleToggle}
+            />
           ) : (
-            <Menu className="relative z-[100]" onClick={handleToggle} />
+            <Menu
+              className="relative z-[100] block sm:hidden"
+              onClick={handleToggle}
+            />
           )}
           <div className="hidden sm:flex justify-center items-center gap-3">
             {socials.map((item, i) => (
@@ -105,7 +111,7 @@ const Header = () => {
         </div>
       </Container>
       {toggle && (
-        <div className="fixed top-[100px] left-0 right-0 bottom-0 bg-white flex justify-start items-start">
+        <div className="fixed top-[0] pt-[100px] left-0 right-0 bottom-0 bg-white flex justify-start items-start">
           <div className="w-[94%] flex flex-col justify-center items-start gap-[30px]">
             {links.map((item, i) => (
               <div key={i} className="w-full flex justify-between items-center">
