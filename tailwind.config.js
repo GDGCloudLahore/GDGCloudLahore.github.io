@@ -19,6 +19,9 @@ module.exports = {
         blue: "#4669fa",
         ghost: "#e9e9e9",
       },
+      screens: {
+        "3xl": 1920,
+      },
     },
   },
   plugins: [],

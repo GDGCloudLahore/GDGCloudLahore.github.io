@@ -21,17 +21,17 @@ const Navbar = () => {
       url: "/learning",
     },
     {
-      name: "Cloud Roadmap",
+      name: "Roadmap",
       url: "/roadmap/cloud",
     },
     {
-      name: "Open source",
+      name: "Opensource",
       url: "https://github.com/GDGCloudLahore",
     },
   ];
 
   return (
-    <div className="fixed z-[100] h-[60px] bottom-[40px] left-[50%] transform translate-x-[-50%] bg-[#f8f8f8] border-2 border-[#dadada] rounded-[12px] p-[8px] flex justify-center items-center gap-2 shadow-lg">
+    <div className="hidden sm:flex fixed z-[100] h-[60px] bottom-[40px] left-[50%] transform translate-x-[-50%] bg-[#f8f8f8] border-2 border-[#dadada] rounded-[12px] p-[8px] justify-center items-center gap-2 shadow-lg">
       {links.map((item, i) => (
         <Link
           key={i}

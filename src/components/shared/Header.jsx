@@ -1,9 +1,18 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   const socials = [
     {
       name: "LinkedIn - GDG Cloud Lahore",
@@ -17,13 +26,36 @@ const Header = () => {
     },
   ];
 
+  const links = [
+    {
+      name: "Home",
+      url: "/",
+    },
+    {
+      name: "Blogs",
+      url: "/blogs",
+    },
+    {
+      name: "Learning",
+      url: "/learning",
+    },
+    {
+      name: "Roadmap",
+      url: "/roadmap/cloud",
+    },
+    {
+      name: "Opensource",
+      url: "https://github.com/GDGCloudLahore",
+    },
+  ];
+
   return (
     <header>
       <Container>
         <div className="flex justify-between items-center">
           <Link
             href="/"
-            className="relative bottom-[-2px] md:static md:bottom-0 text-[18px] font-bold flex justify-center items-center"
+            className="relative bottom-[-2px] md:static md:bottom-0 text-[18px] font-bold flex justify-center items-center z-[100]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +85,12 @@ const Header = () => {
             <span>Google Cloud Lahore</span>
           </Link>
 
-          <div className="flex justify-center items-center gap-3">
+          {toggle ? (
+            <X className="relative z-[100]" onClick={handleToggle} />
+          ) : (
+            <Menu className="relative z-[100]" onClick={handleToggle} />
+          )}
+          <div className="hidden sm:flex justify-center items-center gap-3">
             {socials.map((item, i) => (
               <Link
                 key={i}
@@ -67,6 +104,24 @@ const Header = () => {
           </div>
         </div>
       </Container>
+      {toggle && (
+        <div className="fixed top-[100px] left-0 right-0 bottom-0 bg-white flex justify-start items-start">
+          <div className="w-[94%] flex flex-col justify-center items-start gap-[30px]">
+            {links.map((item, i) => (
+              <div key={i} className="w-full flex justify-between items-center">
+                <Link
+                  href={item.url}
+                  className={`relative h-full px-[16px] transition-all ease-in-out rounded-[8px] flex justify-center items-center text-[18px]`}
+                >
+                  {item.name}
+                </Link>
+
+                <ArrowUpRight width={18} height={18} color="#4669fa" />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   );
 };

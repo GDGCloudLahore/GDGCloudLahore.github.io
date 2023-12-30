@@ -20,7 +20,7 @@ const DisplayAllTeam = ({ allTeam }) => {
   return (
     <>
       {visibleTeam.length > 0 ? (
-        <div className="mt-[40px] grid grid-cols-4 gap-[20px]">
+        <div className="mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[20px]">
           {visibleTeam.map((team, i) => (
             <TeamCard
               key={i}

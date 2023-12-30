@@ -20,7 +20,7 @@ const DisplayAllEvents = ({ allEvents }) => {
   return (
     <>
       {visibleEvents.length > 0 ? (
-        <div className="mt-[40px] grid grid-cols-4 gap-[20px]">
+        <div className="mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[20px]">
           {visibleEvents.map((event, i) => (
             <Card
               key={i}
@@ -33,7 +33,7 @@ const DisplayAllEvents = ({ allEvents }) => {
           ))}
         </div>
       ) : (
-        <div className="mt-[40px] flex flex-col gap-[20px] justify-center items-center bg-[#f8f8f8] max-w-fit mx-auto py-[40px] px-[60px] rounded-[16px] border-2 border-[#dadada]">
+        <div className="mt-[40px] flex flex-col gap-[20px] justify-center items-center bg-[#f8f8f8] md:max-w-fit mx-auto py-[40px] sm:px-[60px] rounded-[16px] border-2 border-[#dadada]">
           <h4 className="text-[28px] font-semibold text-black">👀 Oops!</h4>
           <p className="max-w-[300px] text-[16px] text-[#4d4d4d] text-center">
             The event ground seems to be empty right now. Check back later!

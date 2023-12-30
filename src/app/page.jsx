@@ -8,7 +8,7 @@ import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-[#FFFBFB] m-[20px] rounded-[16px] flex flex-col gap-[140px] py-[20px]">
+    <main className="bg-[#FFFBFB] sm:m-[20px] sm:rounded-[16px] flex flex-col gap-[100px] sm:gap-[140px] py-[20px]">
       <div>
         <Header />
         <HeroSection />
