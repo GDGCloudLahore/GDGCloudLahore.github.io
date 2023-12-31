@@ -8,3 +8,7 @@ body {
   scroll-behavior: smooth;
   cursor: none;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

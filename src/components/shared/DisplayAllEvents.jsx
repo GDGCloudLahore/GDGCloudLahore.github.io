@@ -33,8 +33,10 @@ const DisplayAllEvents = ({ allEvents }) => {
           ))}
         </div>
       ) : (
-        <div className="mt-[20px] sm:mt-[40px] flex flex-col gap-[20px] justify-center items-center bg-[#f8f8f8] md:max-w-fit mx-auto py-[40px] sm:px-[60px] rounded-[16px] border-2 border-[#dadada]">
-          <h4 className="text-[28px] font-semibold text-black">👀 Oops!</h4>
+        <div className="mt-[20px] sm:mt-[40px] flex flex-col gap-[20px] justify-center items-center bg-[#f8f8f8] md:max-w-fit mx-auto py-[30px] sm:px-[60px] rounded-[16px] border-2 border-[#dadada]">
+          <h4 className="text-[22px] md:text-[28px] font-semibold text-black">
+            👀 Oops!
+          </h4>
           <p className="max-w-[300px] text-[16px] text-[#4d4d4d] text-center">
             The event ground seems to be empty right now. Check back later!
           </p>

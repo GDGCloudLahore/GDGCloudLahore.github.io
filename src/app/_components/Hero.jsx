@@ -9,22 +9,21 @@ import Newsletter from "./Newsletter";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen h-auto md:pt-[140px] flex justify-center items-center">
+    <section className="pt-[130px] flex justify-center items-center">
       <Container>
         <div className="flex flex-col justify-center items-center gap-[8px]">
           <h1 className="max-w-[500px] md:max-w-[720px] mx-auto uppercase text-[22px] sm:text-[28px] leading-[140%] font-semibold text-center">
             Discover cloud computing with guidance from{" "}
-            <span className="pt-[2px] sm:pt-0 w-fit mx-auto text-white bg-black px-[16px] py-[4px] rounded-[12px] block md:inline">
+            <span className="mt-[8px] md:mt-0 pt-[2px] sm:pt-0 w-fit mx-auto text-white bg-black px-[16px] py-[4px] rounded-[12px] block md:inline">
               industry professionals!
             </span>
           </h1>
           <p className="mt-[8px] max-w-[350px] sm:max-w-[500px] md:max-w-[600px] text-[14px] sm:text-[16px] text-[#4d4d4d] leading-[140%] text-center">
-            We assist students, beginners, and professionals by offering
-            well-organized learning paths, open-source projects guided by
-            development experts, and workshops that you can attend to enhance
-            your knowledge.
+            We help people by offering well-organized learning paths,
+            open-source projects by our development experts, and workshops that
+            you can attend to enhance your skills.
           </p>
-          <div className="mt-[20px] max-w-[450px] w-full">
+          <div className="mx-auto mt-[20px] max-w-[340px] md:max-w-[450px] w-full">
             <div className="flex justify-center items-center gap-1 sm:gap-2">
               <Mail
                 width={20}
