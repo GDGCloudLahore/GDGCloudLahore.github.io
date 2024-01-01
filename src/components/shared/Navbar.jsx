@@ -11,22 +11,27 @@ const Navbar = () => {
     {
       name: "Home",
       url: "/",
+      newPage: false,
     },
     {
       name: "Blogs",
-      url: "/blogs",
+      url: "https://dev.to/gdgcloudlahore_org",
+      newPage: true,
     },
     {
       name: "Learning",
       url: "/learning",
+      newPage: false,
     },
     {
       name: "Roadmap",
       url: "/roadmap/cloud",
+      newPage: false,
     },
     {
       name: "Opensource",
       url: "https://github.com/GDGCloudLahore",
+      newPage: true,
     },
   ];
 
@@ -35,6 +40,7 @@ const Navbar = () => {
       {links.map((item, i) => (
         <Link
           key={i}
+          target={item.newPage ? "_blank" : "_self"}
           href={item.url}
           className={`${
             pathname === item.url
