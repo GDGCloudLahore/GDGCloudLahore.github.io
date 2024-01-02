@@ -1,1 +1,1 @@
-![image](https://github.com/GDGCloudLahore/gdgcloudlahore/assets/97826292/080bb8c6-e9a5-43fb-b279-e7a85e8b262a)
+![image](https://github.com/GDGCloudLahore/GDGCloudLahore/assets/97826292/d7266c36-465a-421e-8c6c-587bd4c8ee8b)
