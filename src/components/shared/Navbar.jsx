@@ -20,19 +20,19 @@ const Navbar = () => {
     },
     {
       name: "Learning",
-      url: "/learning",
-      newPage: false,
+      url: "https://github.com/GDGCloudLahore/GCP-Learning",
+      newPage: true,
     },
     {
       name: "Roadmap",
-      url: "/roadmap/cloud",
+      url: "https://github.com/GDGCloudLahore/GCP-RoadMap",
       newPage: false,
     },
-    {
-      name: "Opensource",
-      url: "https://github.com/GDGCloudLahore",
-      newPage: true,
-    },
+    // {
+    //   name: "Opensource",
+    //   url: "https://github.com/GDGCloudLahore",
+    //   newPage: true,
+    // },
   ];
 
   return (

@@ -5,7 +5,8 @@ import { Mail } from "lucide-react";
 
 // Components
 import Container from "@/components/shared/Container";
-import Newsletter from "./Newsletter";
+import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -23,7 +24,7 @@ const HeroSection = () => {
             open-source projects by our development experts, and workshops that
             you can attend to enhance your skills.
           </p>
-          <div className="mx-auto mt-[20px] max-w-[340px] md:max-w-[450px] w-full">
+          <div className="mx-auto mt-[20px] max-w-[340px] md:max-w-[450px] w-full flex flex-col justify-center items-center">
             <div className="flex justify-center items-center gap-1 sm:gap-2">
               <Mail
                 width={20}
@@ -32,10 +33,18 @@ const HeroSection = () => {
                 className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]"
               />
               <p className="text-[14px] sm:text-[16px] leading-[140%] text-[#4d4d4d]">
-                Subscribe for match updates
+                Want to place some notes?
               </p>
             </div>
-            <Newsletter className="mt-[8px] w-full" />
+            <Link
+              href="https://github.com/orgs/GDGCloudLahore/discussions"
+              target="_blank"
+              className="max-w-[240px] md:max-w-[280px] w-full mt-[12px] md:mt-[20px]"
+            >
+              <Button variant="warning" size="small" className="font-semibold">
+                Join our discussion room
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>
