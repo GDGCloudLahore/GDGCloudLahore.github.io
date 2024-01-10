@@ -24,9 +24,9 @@ const Navbar = () => {
       newPage: true,
     },
     {
-      name: "Roadmap",
-      url: "https://github.com/GDGCloudLahore/GCP-RoadMap",
-      newPage: false,
+      name: "GCP Mindmap",
+      url: "https://whimsical.com/google-cloud-learning-resources-with-links-JdobwsjDCzSMX1a738xkhf",
+      newPage: true,
     },
     // {
     //   name: "Opensource",
