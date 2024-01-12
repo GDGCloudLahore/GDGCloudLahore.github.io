@@ -39,7 +39,7 @@ const Header = () => {
     },
     {
       name: "GCP Mindmap",
-      url: "https://whimsical.com/google-cloud-learning-resources-with-links-JdobwsjDCzSMX1a738xkhf",
+      url: "https://cloudlahore.gumroad.com/",
     }
   ];
 
