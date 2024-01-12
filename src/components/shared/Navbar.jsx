@@ -14,16 +14,6 @@ const Navbar = () => {
       newPage: false,
     },
     {
-      name: "Blogs",
-      url: "https://dev.to/gdgcloudlahore_org",
-      newPage: true,
-    },
-    {
-      name: "Learning",
-      url: "https://github.com/GDGCloudLahore/GCP-Learning",
-      newPage: true,
-    },
-    {
       name: "GCP Mindmap",
       url: "https://whimsical.com/google-cloud-learning-resources-with-links-JdobwsjDCzSMX1a738xkhf",
       newPage: true,

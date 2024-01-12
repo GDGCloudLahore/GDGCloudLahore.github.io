@@ -38,14 +38,6 @@ const Header = () => {
       url: "/",
     },
     {
-      name: "Blogs",
-      url: "https://dev.to/gdgcloudlahore_org",
-    },
-    {
-      name: "Learning",
-      url: "https://github.com/GDGCloudLahore/GCP-Learning",
-    },
-    {
       name: "GCP Mindmap",
       url: "https://whimsical.com/google-cloud-learning-resources-with-links-JdobwsjDCzSMX1a738xkhf",
     }
