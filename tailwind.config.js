@@ -21,7 +21,7 @@ module.exports = {
         green: "#0F9D58",
       },
       screens: {
-        "3xl": 1920,
+        "3xl": "1920px",
       },
     },
   },

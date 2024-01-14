@@ -12,3 +12,35 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+.move-left-right {
+  animation: moveLeftRight 4s infinite;
+}
+
+@keyframes moveRightLeft {
+  0% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+.move-right-left {
+  animation: moveRightLeft 4s infinite;
+}

@@ -10,8 +10,8 @@ const TeamCard = ({ className = "", image, name, bio, skill, socials }) => {
     <div
       className={`${className} border border-[#dadada] bg-[#fff] shadow-md p-[12px] rounded-[20px] flex flex-col`}
     >
-      <div className="border border-[#dadada] relative w-full h-[86vw] sm:h-[38vw] md:h-[41vw] lg:h-[27vw] xl:h-[20vw] 2xl:h-[16.5vw] 3xl:h-[34s0px] rounded-[12px] overflow-hidden">
-        <Image src={image} alt={name} fill className="object-contain" />
+      <div className="border border-[#dadada] relative w-full h-[86vw] sm:h-[38vw] md:h-[41vw] lg:h-[27vw] xl:h-[28vw] 2xl:h-[20.8vw] 3xl:h-[340px] rounded-[12px] overflow-hidden">
+        <Image src={image} alt={name} fill className="object-cover" />
       </div>
       <div className="mt-[24px] flex-1 flex flex-col">
         <div className="flex-1 flex flex-col gap-[20px] sm:gap-2">

@@ -17,10 +17,11 @@ const HeroSection = () => {
   ]
 
   const badgeStyles = [
-    "right-[00px]",
-    "right-[100px]",
-    "right-[-100px]"
-  ]
+    "right-[00px] move-left-right",
+    "right-[100px] move-right-left",
+    "right-[-100px] move-right-left",
+    ""
+  ];
 
   const badgeIcons = [
     <CheckCircle width={20} height={20} color="#000" fill="white" />,
@@ -33,9 +34,8 @@ const HeroSection = () => {
 
   return (
     <section className="pt-[160px] flex justify-center items-center">
-      <div></div>
       <Container>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-[140px] xl:gap-0">
           <div className="flex flex-col gap-[8px]">
             <h1 className={headingClassNames}>
               Discover cloud computing with guidance from{" "}
@@ -72,7 +72,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center w-[1000px]">
+          <div className="hidden sm:flex justify-center items-center w-full xl:w-[550px] 2xl:w-[660px] 3xl:w-[1000px]">
             <div className="shadow-lg relative border-2 border-gray rounded-[16px] px-[26px] pt-[40px] pb-[26px] bg-[#f6f6f6]">
               <p className="absolute h-[46px] top-[-28px] w-fit bg-yellow text-black px-[20px] rounded-[14px] flex justify-center items-center gap-2">
               <span className="text-[18px] pb-1">👀</span> <span className="text-[16px]">Benefits to join</span>

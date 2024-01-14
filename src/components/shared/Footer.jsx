@@ -12,7 +12,7 @@ const Footer = () => {
           <Link
             href="https://events.linuxfoundation.org/about/code-of-conduct/"
             target="_blank"
-            className="text-[20px] text-black"
+            className="text-[18px] xl:text-[20px] text-black"
           >
             Code of Conduct
           </Link>

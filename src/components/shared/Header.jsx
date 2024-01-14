@@ -41,6 +41,10 @@ const Header = () => {
     {
       name: "GCP Mindmap",
       url: "https://cloudlahore.gumroad.com/",
+    },
+    {
+      name: "Blogs",
+      url: "https://dev.to/gdgcloudlahore_org",
     }
   ];
 
@@ -69,7 +73,7 @@ const Header = () => {
                 target="_blank"
                 className="hover:opacity-90 hover:trnasform hover:scale-95 transition-all ease-in-out"
               >
-                <Image src={item.icon} alt={item.name} width={52} height={52} />
+                <Image src={item.icon} alt={item.name} width={52} height={52} className="w-[44px] h-[44px] 2xl:w-[52px] 2xl:h-[52px]" />
               </Link>
             ))}
           </div>

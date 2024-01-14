@@ -12,7 +12,7 @@ export default function Logo() {
                 height="40px"
                 viewBox="0 0 94 40"
                 fill="none"
-                className="w-[60px] h-[40px]"
+                className="w-[48px] h-[24px] sm:w-[56px] sm:h-[24px] 2xl:w-[60px] 2xl:h-[40px]"
             >
                 <path
                 d="M17.3847 18.4616L28.7694 11.8462C31.3848 10.3077 32.3078 6.92309 30.7694 4.15386C29.2309 1.53848 25.8463 0.615394 23.0771 2.15385L3.38477 13.5385L17.3847 18.4616Z"
@@ -31,7 +31,7 @@ export default function Logo() {
                 fill="#0F9D58"
                 />
             </svg>
-            <span className="text-[22px]">Google Cloud Lahore</span>
+            <span className="text-[18px] sm:text-[20px] xl:text-[22px]">Google Cloud Lahore</span>
         </Link>
     )
 }
