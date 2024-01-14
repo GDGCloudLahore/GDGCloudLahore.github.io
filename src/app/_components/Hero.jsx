@@ -23,13 +23,6 @@ const HeroSection = () => {
     ""
   ];
 
-  const badgeIcons = [
-    <CheckCircle width={20} height={20} color="#000" fill="white" />,
-    <CheckCircle width={20} height={20} color="#000" fill="white" />,
-    <Lightbulb width={24} height={24} color="#000" />,
-    <Rocket width={24} height={24} color="#000" full="white" />
-  ]
-
   const headingClassNames = "uppercase leading-[140%] font-semibold max-w-[500px] md:max-w-[660px] text-[22px] sm:text-[28px] md:text-[40px]"
 
   return (
@@ -81,7 +74,16 @@ const HeroSection = () => {
                 {
                   data.map((item, index) => (
                     <div key={index} className={`relative z-[2] w-full h-[70px] flex justify-start items-center gap-3 bg-white relative border-2 border-gray rounded-[14px] pl-[26px] pr-[36px] ${badgeStyles[index]} shadow-md bottom-0 hover:bottom-[3px] transition-all`}>
-                      {badgeIcons[index]}
+                      {
+                        index === 0 ? 
+<CheckCircle key="checkCircle1" width={20} height={20} color="#000" fill="white" /> :
+index === 1 ?
+<CheckCircle key="checkCircle2" width={20} height={20} color="#000" fill="white" /> :
+index === 2 ?
+<Lightbulb key="lightbulb" width={24} height={24} color="#000" /> :
+index === 3 ?
+<Rocket key="rocket" width={24} height={24} color="#000" full="white" /> : null
+                      }
                       <p className="text-[18px] text-black">{item}</p>
                     </div>
                   ))
