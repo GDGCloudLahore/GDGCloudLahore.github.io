@@ -38,7 +38,7 @@ const teamMembers = [
   {
     image: "/assets/team/hasnaat.jpg",
     name: "Hasnaat Iftikhar",
-    skill: "FullStack JavaScript Developer",
+    skill: "FullStack Developer",
     bio: "Versatile FullStack Developer dedicated to crafting seamless User Experiences.",
     socials: [
       {

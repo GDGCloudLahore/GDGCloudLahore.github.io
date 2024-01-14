@@ -8,21 +8,21 @@ import Link from "next/link";
 const TeamCard = ({ className = "", image, name, bio, skill, socials }) => {
   return (
     <div
-      className={`${className} bg-[#EBEBEB] p-[12px] rounded-[20px] flex flex-col`}
+      className={`${className} border border-[#dadada] bg-[#fff] shadow-md p-[12px] rounded-[20px] flex flex-col`}
     >
-      <div className="relative w-full h-[86vw] sm:h-[38vw] md:h-[41vw] lg:h-[27vw] xl:h-[20vw] 2xl:h-[16.5vw] 3xl:h-[34s0px] rounded-[12px] overflow-hidden">
+      <div className="border border-[#dadada] relative w-full h-[86vw] sm:h-[38vw] md:h-[41vw] lg:h-[27vw] xl:h-[20vw] 2xl:h-[16.5vw] 3xl:h-[34s0px] rounded-[12px] overflow-hidden">
         <Image src={image} alt={name} fill className="object-contain" />
       </div>
       <div className="mt-[24px] flex-1 flex flex-col">
         <div className="flex-1 flex flex-col gap-[20px] sm:gap-2">
-          <h3 className="text-[18px] font-semibold">{name}</h3>
+          <h3 className="text-[20px] font-semibold">{name}</h3>
           <div className="flex flex-wrap gap-2">
-            <p className="w-fit text-black text-[16px] sm:text-[14px]">
+            <p className="w-fit text-black text-[16px] sm:text-[16px]">
               {skill}
             </p>
           </div>
           {bio && (
-            <p className="sm:mt-[12px] text-[16px] sm:text-[14px] text-black leading-[140%]">
+            <p className="sm:mt-[12px] text-[16px] sm:text-[16px] text-black leading-[150%]">
               {bio}
             </p>
           )}
