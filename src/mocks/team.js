@@ -69,7 +69,7 @@ const teamMembers = [
   {
     image: "/assets/team/moez.jpg",
     name: "Moez Mustafa",
-    skill: "Tech CEO 🇹🇷 & STEM undergrad",
+    skill: "Creating tech solutions globally!",
     bio: "A visionary STEM undergraduate and tech CEO.",
     socials: [
       {
