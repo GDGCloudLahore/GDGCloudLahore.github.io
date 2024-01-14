@@ -53,6 +53,32 @@ const teamMembers = [
       },
     ],
   },
+  {
+    image: "/assets/team/arslan.jpg",
+    name: "Arslan Khalid",
+    skill: "Product Designer",
+    bio: "A skillful graphic designer with keen eye in design details.",
+    socials: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/arslan4real/",
+        theme: "primary",
+      },
+    ],
+  },
+  {
+    image: "/assets/team/moez.jpg",
+    name: "Moez Mustafa",
+    skill: "Tech CEO 🇹🇷 & STEM undergrad",
+    bio: "A visionary STEM undergraduate and tech CEO.",
+    socials: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/arslan4real/",
+        theme: "primary",
+      },
+    ],
+  },
 ];
 
 export default teamMembers;
