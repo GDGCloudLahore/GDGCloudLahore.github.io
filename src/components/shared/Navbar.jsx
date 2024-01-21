@@ -14,10 +14,15 @@ const Navbar = () => {
       newPage: false,
     },
     {
+      name: "Mentorship",
+      url: "/mentorship",
+    },
+    {
       name: "GCP Mindmap",
       url: "https://cloudlahore.gumroad.com/",
       newPage: true,
-    },{
+    },
+    {
       name: "Blogs",
       url: "https://dev.to/gdgcloudlahore_org",
       newPage: true,

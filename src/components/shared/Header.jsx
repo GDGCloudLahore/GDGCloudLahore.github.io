@@ -39,6 +39,10 @@ const Header = () => {
       url: "/",
     },
     {
+      name: "Mentorship",
+      url: "/mentorship",
+    },
+    {
       name: "GCP Mindmap",
       url: "https://cloudlahore.gumroad.com/",
     },
@@ -52,7 +56,7 @@ const Header = () => {
     <header>
       <Container>
         <div className="flex justify-between items-center">
-          <Logo />
+          <Logo className="z-[100]" />
 
           {toggle ? (
             <X
