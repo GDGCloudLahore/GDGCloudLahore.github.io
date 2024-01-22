@@ -39,7 +39,7 @@ const Mentor = ({ className = "", image, name, bio, skill, tag, topmate, linkedi
         </Button>
         <Button variant="primary" size="large" className="flex-1 flex justify-center items-center gap-[8px]">
             <Image src="/assets/icons/linkedin-light.svg" width={24} height={24} />
-            Topmate
+            LinkedIn
         </Button>
       </div>
     </div>
