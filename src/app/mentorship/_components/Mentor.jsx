@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Components
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const Mentor = ({ className = "", image, name, bio, skill, tag, topmate, linkedin }) => {
   return (
@@ -33,14 +34,26 @@ const Mentor = ({ className = "", image, name, bio, skill, tag, topmate, linkedi
         </p>
       </div>
       <div className="mt-[16px] flex justify-center items-center gap-2">
-        <Button variant="default" size="large" className="flex-1 flex justify-center items-center gap-[8px]">
-            <Image src="/assets/icons/topmate.png" width={24} height={24} />
-            Topmate
-        </Button>
-        <Button variant="primary" size="large" className="flex-1 flex justify-center items-center gap-[8px]">
-            <Image src="/assets/icons/linkedin-light.svg" width={24} height={24} />
-            LinkedIn
-        </Button>
+        {
+          topmate && (
+            <Link className="flex-1" target="_blank" href={topmate}>
+              <Button variant="default" size="large" className="flex-1 flex justify-center items-center gap-[8px]">
+                  <Image src="/assets/icons/topmate.png" width={24} height={24} />
+                  Topmate
+              </Button>
+            </Link>
+          )
+        }
+        {
+          linkedin && (
+            <Link className="flex-1" target="_blank" href={linkedin}>
+              <Button variant="primary" size="large" className="flex-1 flex justify-center items-center gap-[8px]">
+                  <Image src="/assets/icons/linkedin-light.svg" width={24} height={24} />
+                  LinkedIn
+              </Button>
+            </Link>
+          )
+        }
       </div>
     </div>
   );
