@@ -15,7 +15,7 @@ export const mentorTags = [
 
 const allMentors = [
      {
-         image: "https://avatars.githubusercontent.com/u/53600644?v=4",
+         image: "https://media.licdn.com/dms/image/D4D03AQGIdtygjGyZOg/profile-displayphoto-shrink_800_800/0/1702323596129?e=1711584000&v=beta&t=UWO5fEU1XLGJk5JsEb73E2OeDn9vY4f2Exj5JijS5DI",
          name: "Adil Shahzad",
          skill: "DevOps Engineer",
          bio: "Adil Shahzad, a multi-cloud certified Senior DevOps Engineer at Strategics Systems International, has spoken at Amazon Web Services and contributed to Pakt Publishing. He's also organized over 10 tech events in Pakistan, significantly empowering the tech community there. ",
