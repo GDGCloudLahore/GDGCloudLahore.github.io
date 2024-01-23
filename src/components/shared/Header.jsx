@@ -84,7 +84,7 @@ const Header = () => {
         </div>
       </Container>
       {toggle && (
-        <div className="fixed top-[0] pt-[100px] pb-[16px] left-0 right-0 bottom-0 bg-white flex flex-col justify-start items-start">
+        <div className="fixed z-[9999] top-[0] pt-[100px] pb-[16px] left-0 right-0 bottom-0 bg-white flex flex-col justify-start items-start">
           <div className="flex-1 w-[94%] flex flex-col justify-start items-center gap-[30px]">
             {links.map((item, i) => (
               <div key={i} className="w-full flex justify-between items-center">
