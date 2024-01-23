@@ -26,6 +26,11 @@ const Navbar = () => {
       name: "Blogs",
       url: "https://dev.to/gdgcloudlahore_org",
       newPage: true,
+    },
+    {
+      name: "Gemini Pro",
+      url: "https://github.com/GDGCloudLahore/All-About-Google-GeminiPro",
+      newPage: true,
     }
   ];
 
