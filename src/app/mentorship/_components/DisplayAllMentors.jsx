@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Button from "../../../components/ui/Button";
 import Mentor from "@/app/mentorship/_components/Mentor";
 import Container from "@/components/shared/Container";
-import Link from "next/link";
-import Image from "next/image";
 
 const DisplayAllMentors = ({ allMentors }) => {
   const maxEventsToShow = 8;
@@ -19,14 +17,6 @@ const DisplayAllMentors = ({ allMentors }) => {
     setVisibleMentors((prevTeam) => [...prevTeam, ...remainingTeam]);
     setShowMore(false);
   };
-
-  function truncateText(text, maxLength) {
-    if (text.length > maxLength) {
-        return text.substring(0, maxLength) + "...";
-    } else {
-        return text;
-    }
-  }
 
   return (
     <Container>
@@ -45,7 +35,7 @@ const DisplayAllMentors = ({ allMentors }) => {
           ))}
         </div>
       ) : (
-        <div className="mt-[20px] sm:mt-[40px] flex flex-col gap-[20px] justify-center items-center bg-[#f8f8f8] max-w-fit mx-auto py-[40px] px-[60px] rounded-[16px] border-2 border-[#dadada]">
+        <div className="mt-[16px] md:mt-[20px] sm:mt-[40px] flex flex-col gap-[20px] justify-center items-center bg-[#f8f8f8] max-w-fit mx-auto py-[40px] px-[60px] rounded-[16px] border-2 border-[#dadada]">
           <h4 className="text-[28px] font-semibold text-black">👀 Oops!</h4>
           <p className="max-w-[300px] text-[16px] text-[#4d4d4d] text-center">
             Currently, there&apos;s no mentor information available.

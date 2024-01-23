@@ -45,7 +45,7 @@ const Page = () => {
                   mentorTags.map((tag, index) => (
                     <button
                       key={index}
-                      className={`w-fit bg-[#ebebeb] text-black rounded-[8px] px-[12px] py-[8px] text-[16px] sm:text-[16px]`}
+                      className={`w-fit bg-[#ebebeb] text-black rounded-[8px] px-[12px] py-[8px] text-[14px] md:text-[16px] sm:text-[16px]`}
                       onClick={() => handleTagClick(tag.name)}
                     >
                       {tag.name}

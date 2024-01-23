@@ -16,7 +16,7 @@ const MentorshipHeroSection = () => {
                         <h1 className={headingClassNames}>
                         Unlock Your Potential with{" "}
                         <span className="mt-[8px] md:mt-0 pt-[2px] sm:pt-0 w-fit text-white bg-black px-[16px] py-[4px] rounded-[12px] block md:inline">
-                        Expert Mentorship!
+                        Cloud Experts!
                         </span>
                         </h1>
                         <p className="mt-[8px] max-w-[350px] sm:max-w-[500px] md:max-w-[500px] text-[14px] sm:text-[16px] md:text-[18px] text-[#4d4d4d] leading-[140%]">
