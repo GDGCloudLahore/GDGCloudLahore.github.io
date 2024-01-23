@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Button from "../../../components/ui/Button";
 import Mentor from "@/app/mentorship/_components/Mentor";
 import Container from "@/components/shared/Container";
+import Link from "next/link";
+import Image from "next/image";
 
 const DisplayAllMentors = ({ allMentors }) => {
   const maxEventsToShow = 8;
@@ -18,10 +20,18 @@ const DisplayAllMentors = ({ allMentors }) => {
     setShowMore(false);
   };
 
+  function truncateText(text, maxLength) {
+    if (text.length > maxLength) {
+        return text.substring(0, maxLength) + "...";
+    } else {
+        return text;
+    }
+  }
+
   return (
     <Container>
       {visibleMentors.length > 0 ? (
-        <div className="mt-[64px] sm:mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-[20px]">
+        <div className="mt-[64px] sm:mt-[40px] grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-[20px]">
           {visibleMentors.map((team, i) => (
             <Mentor
               key={i}
@@ -29,9 +39,8 @@ const DisplayAllMentors = ({ allMentors }) => {
               name={team.name}
               skill={team.skill}
               bio={team.bio}
-              tag={team.tag}
+              tags={team.tags}
               topmate={team.topmate}
-              linkedin={team.linkedin}
             />
           ))}
         </div>
