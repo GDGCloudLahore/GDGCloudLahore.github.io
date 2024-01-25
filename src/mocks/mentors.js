@@ -17,7 +17,7 @@ const allMentors = [
      {
          image: "https://media.licdn.com/dms/image/D4D03AQGIdtygjGyZOg/profile-displayphoto-shrink_800_800/0/1702323596129?e=1711584000&v=beta&t=UWO5fEU1XLGJk5JsEb73E2OeDn9vY4f2Exj5JijS5DI",
          name: "Adil Shahzad",
-         skill: "DevOps Engineer",
+         skill: "Senior DevOps Engineer",
          bio: "Adil Shahzad, a multi-cloud certified Senior DevOps Engineer at Strategics Systems International, has spoken at Amazon Web Services and contributed to Pakt Publishing. He's also organized over 10 tech events in Pakistan, significantly empowering the tech community there. ",
          tags: [mentorTags[1], mentorTags[2]],
          topmate: "https://topmate.io/shahzad",
@@ -30,6 +30,16 @@ const allMentors = [
          tags: [mentorTags[1]],
          topmate: "https://topmate.io/hasnaat_iftikhar",
     },
+    {
+         image: "https://media.licdn.com/dms/image/D4E03AQGwqEw8j0QFnA/profile-displayphoto-shrink_400_400/0/1690628753999?e=1711584000&v=beta&t=aHiWNJk0PDNaxXnI2pgxBkWxtqH2i4RIDUUSzF0W-zY",
+         name: "Syed Asad Raza",
+         skill: "DevOps Engineer",
+         bio: "CNCF Ambassador | GDG Organizer | Cloud & DevOps Engineer at Ascend healthcare",
+         tags: [mentorTags[1], mentorTags[2]],
+         topmate: "https://topmate.io/syedasadrazadevops",
+    }
+    
+    
   ];
   
   export default allMentors;
