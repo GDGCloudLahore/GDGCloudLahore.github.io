@@ -37,6 +37,14 @@ const allMentors = [
          bio: "CNCF Ambassador | GDG Organizer | Cloud & DevOps Engineer at Ascend healthcare",
          tags: [mentorTags[1], mentorTags[2]],
          topmate: "https://topmate.io/syedasadrazadevops",
+    },
+    {
+         image: "https://media.licdn.com/dms/image/C4D03AQGkpXv16rag1A/profile-displayphoto-shrink_400_400/0/1653203888415?e=1712188800&v=beta&t=0OXvVpjtrKcZXc0MlAzwJ8rgGlGZHm3dnY-DpMZ_OI4",
+         name: "Ahmed Tariq",
+         skill: "DevOps Engineer",
+         bio: "As a Multi-Cloud Certified Cloud DevOps Engineer, I specialize in AWS, Azure, and Google Cloud. My experience spans over 3 years in various projects where I’ve applied my expertise in CI/CD pipelines, automation, cloud infrastructure design, and deployment.",
+         tags: [mentorTags[1], mentorTags[2]],
+         topmate: "https://topmate.io/ahmed_tm",
     }
     
     
