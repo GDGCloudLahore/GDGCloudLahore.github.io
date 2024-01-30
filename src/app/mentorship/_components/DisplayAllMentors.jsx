@@ -1,36 +1,30 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Button from "../../../components/ui/Button";
 import Mentor from "@/app/mentorship/_components/Mentor";
 import Container from "@/components/shared/Container";
 
 const DisplayAllMentors = ({ allMentors }) => {
-  const maxEventsToShow = 8;
-  const [visibleMentors, setVisibleMentors] = useState(
-    allMentors.slice(0, maxEventsToShow)
-  );
-  const [showMore, setShowMore] = useState(allMentors.length > maxEventsToShow);
+  useEffect(() => {
+    console.log("Updated allMentors:", allMentors);
+  }, [allMentors]);
 
-  const handleShowMore = () => {
-    const remainingTeam = allMentors.slice(visibleMentors.length);
-    setVisibleMentors((prevTeam) => [...prevTeam, ...remainingTeam]);
-    setShowMore(false);
-  };
+  const maxEventsToShow = 8;
 
   return (
     <Container>
-      {visibleMentors.length > 0 ? (
+      {allMentors.length > 0 ? (
         <div className="mt-[64px] sm:mt-[40px] grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-[20px]">
-          {visibleMentors.map((team, i) => (
+          {allMentors.slice(0, maxEventsToShow).map((mentor, i) => (
             <Mentor
               key={i}
-              image={team.image}
-              name={team.name}
-              skill={team.skill}
-              bio={team.bio}
-              tags={team.tags}
-              topmate={team.topmate}
+              image={mentor.image}
+              name={mentor.name}
+              skill={mentor.skill}
+              bio={mentor.bio}
+              tags={mentor.tags}
+              topmate={mentor.topmate}
             />
           ))}
         </div>
@@ -43,10 +37,10 @@ const DisplayAllMentors = ({ allMentors }) => {
         </div>
       )}
 
-      {showMore && (
+      {allMentors.length > maxEventsToShow && (
         <div className="flex justify-center items-center">
           <Button
-            onClick={handleShowMore}
+            onClick={() => { /* Handle "See More" button click if needed */ }}
             variant="primary"
             size="small"
             className="mt-[40px] max-w-[200px] mx-auto"

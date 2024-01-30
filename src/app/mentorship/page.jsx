@@ -12,25 +12,40 @@ import Container from '@/components/shared/Container';
 // Mocks
 import allMentors, { mentorTags } from '@/mocks/mentors';
 
-const Page = () => {
-  const [selectedTags, setSelectedTags] = useState([]);
+function filterPostsByCategory(posts, selectedCategory) {
+  // console.log("posts, selectedCategory", posts, selectedCategory)
+  const filteredPosts = [];
 
+  for (const post of posts) {
+    // Assuming each post has a 'categories' property, which is an array of category objects
+    const postCategories = post.tags || [];  // You should adjust this based on your data structure
+
+    // Check if the selected category is present in the post's categories
+    const categoryFound = postCategories.some(category => 
+        category.name === selectedCategory
+    );
+
+    console.log("categoryFound", categoryFound)
+
+    if (categoryFound) {
+        filteredPosts.push(post);
+    }
+}
+
+  return filteredPosts;
+}
+
+const Page = () => {
+  
+  const [selectedMentor, setSelectedMentor] = useState([...allMentors]);
+  
   const handleTagClick = (tag) => {
-    setSelectedTags((prevTags) => {
-      if (prevTags.includes(tag)) {
-        return prevTags.filter((t) => t !== tag);
-      } else {
-        return [...prevTags, tag];
-      }
-    });
+    const disiredResult = filterPostsByCategory(allMentors, tag.name);
+    console.log("disiredResult", disiredResult)
+    setSelectedMentor(disiredResult);
   };
 
-  const filteredMentors = allMentors.filter((mentor) => {
-    if (selectedTags.length === 0) {
-      return true;
-    }
-    return selectedTags.includes(mentor.tag.value);
-  });
+  
 
   return (
     <main className="min-h-[100vh] sm:min-h-[95vh] bg-[#f6f6f6] sm:m-[20px] sm:rounded-[16px] flex flex-col gap-[160px] pt-[20px] pb-[20px] sm:py-[30px]">
@@ -46,7 +61,7 @@ const Page = () => {
                     <button
                       key={index}
                       className={`w-fit bg-[#ebebeb] text-black rounded-[8px] px-[12px] py-[8px] text-[14px] md:text-[16px] sm:text-[16px]`}
-                      // onClick={() => handleTagClick(tag.name)}
+                      onClick={() => handleTagClick(tag)}
                     >
                       {tag.name}
                     </button>
@@ -56,7 +71,7 @@ const Page = () => {
             </Container>
           )
         }
-        <DisplayAllMentors allMentors={filteredMentors} />
+        <DisplayAllMentors allMentors={selectedMentor} />
 
       </div>
       <Footer />
