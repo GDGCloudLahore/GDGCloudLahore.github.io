@@ -20,9 +20,8 @@ export const mentorTags = [
         value: "AI/ML"
     },
     {
-        name: "GCP Expert"
+        name: "GCP Expert",
         value: "gcp-expert"
-
     }
 ];
 
