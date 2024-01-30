@@ -24,7 +24,7 @@ const MentorshipHeroSection = () => {
                         </p>
                     </div>
                     <Link className='w-full max-w-[200px]' target='_blank' href="https://github.com/GDGCloudLahore/GDGCloudLahore/issues/new?assignees=hasnaat-iftikhar&labels=mentorship&projects=&template=user_info_template.md&title=Information+Submission%3A+%5BYour+Name%5D">
-                        <Button variant='default' size='small'>Add your detail</Button>
+                        <Button variant='default' size='small'>Become a mentor</Button>
                     </Link>
                 </div>
             </Container>
