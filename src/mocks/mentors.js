@@ -66,6 +66,15 @@ const allMentors = [
          tags: [mentorTags[0], mentorTags[5]],
          topmate: "https://www.linkedin.com/in/muhammad-zunnurain-hussain-50641b61/?originalSubdomain=pk",
     },
+        {
+         image: "https://media.licdn.com/dms/image/D4D03AQEnbt8YQS0VSw/profile-displayphoto-shrink_400_400/0/1696727451004?e=1712188800&v=beta&t=Esf5z691EcbVk28ibs057sLkRA958KDzNBzog22cGZ0",
+         name: "Usama Navid",
+         skill: "MLOps and Data Engineering",
+         bio: "My tech stack includes expertise in Pytorch, TensorFlow, Keras, and Sci-kit Learn, among others. I am currently focusing on MLOps and Data Engineering, and am always open to discussing emerging technologies and innovative engineering solutions.",
+         tags: [mentorTags[1], mentorTags[4]],
+         topmate: "https://topmate.io/concaption",
+    },
+    
     
     
     
