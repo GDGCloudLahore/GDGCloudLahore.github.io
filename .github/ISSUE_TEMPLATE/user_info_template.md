@@ -3,7 +3,7 @@ name: Mentorship Information Submission
 about: Template for submitting your personal and professional details
 title: 'Information Submission: [Your Name]'
 labels: 'mentorship'
-assignees: 'hasnaat-iftikhar'
+assignees: 'adilshehzad786'
 
 ---
 
