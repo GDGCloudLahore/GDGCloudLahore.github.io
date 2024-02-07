@@ -33,11 +33,6 @@ const Navbar = () => {
       newPage: true,
     },
     {
-      name: "Newsletter",
-      url: "https://mail.googlecloudlahore.com/subscription/form",
-      newPage: true,
-    },
-    {
       name: "Gemini Pro",
       url: "https://github.com/GDGCloudLahore/All-About-Google-GeminiPro",
       newPage: true,
