@@ -6,7 +6,7 @@ import Navbar from "@/components/shared/Navbar";
 const objectSans = localFont({ src: "../fonts/ObjectSans-Regular.otf" });
 
 export const metadata = {
-  title: "Google Cloud Lahore",
+  title: "GDG Cloud Lahore",
   description:
     "GDG Cloud Lahore, a vibrant community dedicated to exploring and advancing cloud technologies.",
 };
