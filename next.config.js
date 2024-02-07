@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Add this line for static HTML export
   images: {
     remotePatterns: [
       {
@@ -14,6 +15,7 @@ const nextConfig = {
       },
     ],
   },
+  // Since you're deploying to a custom domain at the root, no need for basePath or assetPrefix here
 };
 
 module.exports = nextConfig;
