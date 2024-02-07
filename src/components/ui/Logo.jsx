@@ -33,7 +33,7 @@ export default function Logo({
                 fill="#0F9D58"
                 />
             </svg>
-            <span className="text-[18px] sm:text-[20px] xl:text-[22px]">Google Cloud Lahore</span>
+            <span className="text-[18px] sm:text-[20px] xl:text-[22px]">GDG Cloud Lahore</span>
         </Link>
     )
 }
