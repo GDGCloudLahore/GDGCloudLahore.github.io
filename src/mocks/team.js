@@ -74,7 +74,7 @@ const teamMembers = [
     socials: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/arslan4real/",
+        url: "https://www.linkedin.com/in/moeezmustafa/",
         theme: "primary",
       },
       {
