@@ -69,12 +69,22 @@ const teamMembers = [
   {
     image: "/assets/team/moez.jpg",
     name: "Moez Mustafa",
-    skill: "Creating tech solutions globally!",
-    bio: "A visionary STEM undergraduate and tech CEO.",
+    skill: "XR-Development,Automation & UX Design",
+    bio: "A visionary Tech CEO & STEM undergrad ",
     socials: [
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/arslan4real/",
+        theme: "primary",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/moezmustafa/",
+        theme: "primary",
+      },
+      {
+        name: "Website",
+        url: "https://www.moeezmustafa.com/",
         theme: "primary",
       },
     ],
