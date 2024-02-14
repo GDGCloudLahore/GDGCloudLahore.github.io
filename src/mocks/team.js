@@ -94,6 +94,24 @@ const teamMembers = [
       },
     ],
   },
+  {
+    image: "/assets/team/daud.png",
+    name: "Daud Irfan",
+    skill: "Mern-Stack Developer",
+    bio: "MERN Stack Developer with a Passion for Creating Beautiful Websites.",
+    socials: [
+      {
+        name: "GitHub",
+        url: "https://github.com/DaudIrfan1014",
+        theme: "default",
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/daudirfan/",
+        theme: "primary",
+      },
+    ],
+  },
 ];
 
 export default teamMembers;
