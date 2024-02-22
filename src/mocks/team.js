@@ -36,24 +36,6 @@ const teamMembers = [
     ],
   },
   {
-    image: "/assets/team/hasnaat.jpg",
-    name: "Hasnaat Iftikhar",
-    skill: "FullStack Developer",
-    bio: "Versatile FullStack Developer dedicated to crafting seamless User Experiences.",
-    socials: [
-      {
-        name: "GitHub",
-        url: "https://github.com/hasnaat-iftikhar",
-        theme: "default",
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/hasnaat-iftikhar",
-        theme: "primary",
-      },
-    ],
-  },
-  {
     image: "/assets/team/arslan.jpg",
     name: "Arslan Khalid",
     skill: "Product Designer",
