@@ -34,7 +34,7 @@ const teamMembers = [
         theme: "primary",
       },
     ],
-  }
+  },
   {
     image: "/assets/team/moez.jpg",
     name: "Moez Mustafa",
@@ -58,6 +58,7 @@ const teamMembers = [
       },
     ],
   }
+  
 ];
 
 export default teamMembers;
