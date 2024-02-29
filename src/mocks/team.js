@@ -34,25 +34,7 @@ const teamMembers = [
         theme: "primary",
       },
     ],
-  },
-  {
-    image: "/assets/team/arslan.jpg",
-    name: "Arslan Khalid",
-    skill: "Product Designer",
-    bio: "A skillful graphic designer with keen eye in design details.",
-    socials: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/arslan4real/",
-        theme: "primary",
-      },
-        {
-        name: "Portfolio",
-        url: "https://www.behance.net/onboarding/",
-        theme: "primary",
-      },
-    ],
-  },
+  }
   {
     image: "/assets/team/moez.jpg",
     name: "Moez Mustafa",
@@ -75,25 +57,7 @@ const teamMembers = [
         theme: "primary",
       },
     ],
-  },
-  {
-    image: "/assets/team/daud.png",
-    name: "Daud Irfan",
-    skill: "Mern-Stack Developer",
-    bio: "MERN Stack Developer with a Passion for Creating Beautiful Websites.",
-    socials: [
-      {
-        name: "GitHub",
-        url: "https://github.com/DaudIrfan1014",
-        theme: "default",
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/daudirfan/",
-        theme: "primary",
-      },
-    ],
-  },
+  }
 ];
 
 export default teamMembers;
