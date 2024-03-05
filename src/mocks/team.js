@@ -57,8 +57,25 @@ const teamMembers = [
         theme: "primary",
       },
     ],
-  }
-  
+  },
+  {
+    image: "/assets/team/daanyal-rahila-memon.jpg",
+    name: "Daanyal (Rahila) Memon",
+    skill: "Full Stack Developer | AI & Blockchain Enthusiast",
+    bio: "Fond of Learning & Creating",
+    socials: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/daanyal-rahila-memon/",
+        theme: "primary",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/daanyal-rahila-memon",
+        theme: "primary",
+      }
+    ],
+  },
 ];
 
 export default teamMembers;
